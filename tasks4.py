@@ -21,7 +21,7 @@ x=6
 t=t+(x, )
 print(t)
 #4
-grades = [90, 75, 80, 100]
+grades = [90, 75, 80, 100]сал
 kosu=sum(grades)
 count=len(grades)
 orta=kosu/count
