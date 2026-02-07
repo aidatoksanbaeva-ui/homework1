@@ -23,19 +23,10 @@ def analyze_text(text):
 print(analyze_text("Hello, Anna went to level civic center!"))
 #2
 process = lambda s: " ".join(
-    filter(
-        lambda w: len(w) % 2 == 0,
-        map(
-            lambda w: w[::-1],
-            filter(
-                lambda w: not any('0'>=ch>='9' for ch in w),
-                s.split()
-            )
-        )
-    )
+    w[::-1]
+    for w in s.split()
+    if not any('0' <= c <= '9' for c in w) and len(w) % 2 == 0
 )
-text = process("Hello abc123 aida test5 cjde 67")
-print(text)
 #3
 def top_k_words(text, k):
     text = text.lower()
