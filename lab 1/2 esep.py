@@ -4,3 +4,4 @@ process = lambda s: " ".join(
     for w in s.split()
     if not any('0' <= c <= '9' for c in w) and len(w) % 2 == 0
 )
+print(process("hello abc12 test even"))

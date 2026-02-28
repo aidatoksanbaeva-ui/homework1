@@ -3,7 +3,7 @@ def top_k_words(text, k):
     text = text.lower()
     clean_text = ""
     for ch in text:
-        if ch.isalpha() or ch == " ":
+        if 'a'<=ch<='z' or ch == " ":
             clean_text += ch
     words = clean_text.split()
     freq = {}
