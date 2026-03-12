@@ -26,33 +26,38 @@ with open("employees.csv", "r", newline="") as file:
         if department not in departments:
             departments[department]=[]
         departments[department].append(salary)
+#Средняя зарплата
 average_salary=total_salary/c
+#Средняя по отделам
 department_average={}
 for dept in departments:
     department_average[dept]=sum(departments[dept])/len(departments[dept])
+#Отдел с самой высокой средней зарплатой
 max_dept=""
 max_avg=0
 for dept in department_average:
-    if department_average[dept] > max_avg:
+    if department_average[dept]>max_avg:
         max_avg=department_average[dept]
         max_dept=dept
+#Самый высокооплачиваемый сотрудник
 max_employee=""
 max_salary=0
 for emp in employees:
-    if int(emp["salary"]) > max_salary:
+    if int(emp["salary"])>max_salary:
         max_salary=int(emp["salary"])
         max_employee=emp["name"]
+#Сотрудники выше средней
 high_salary_employees=[]
 for emp in employees:
-    if int(emp["salary"]) > average_salary:
+    if int(emp["salary"])>average_salary:
         high_salary_employees.append(emp)
 with open("high_salary_employees.csv", "w", newline="") as file:
-    fieldname = ["name", "department", "salary"]
-    writer = csv.DictWriter(file, fieldnames=fieldname)
+    fieldnames = ["name", "department", "salary"]
+    writer = csv.DictWriter(file, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerows(high_salary_employees)
 print("Средняя зарплата:", average_salary)
 print("Средняя по отделам:", department_average)
 print("Отдел с самой высокой средней зарплатой:", max_dept)
 print("Самый высокооплачиваемый сотрудник:", max_employee)
-print("Сотрудники выше средней:", [emp["name"] for emp in high_salary_employees])
+print("Сотрудники выше средней:", [emp  ["name"] for emp in high_salary_employees])

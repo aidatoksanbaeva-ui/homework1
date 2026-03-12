@@ -1,20 +1,29 @@
 import json
 import csv
+data="""user_id,amount
+user_1,5000
+user_2,10000
+user_1,700000
+user_3,3000
+user_2,900000
+user_4,2000"""
+with open("transactions.csv", "w") as file:
+    file.write(data)
 user_transaction_count = {}
 suspicious_transactions = []
 suspicious_users = set()
 total_suspicious_amount = 0
 with open("transactions.csv", "r", newline="")  as file:
-    reader = csv.DictReader(file)
+    reader=csv.DictReader(file)
     for row in reader:
-        user_id=row["user_id"]
-        amount=int(row["amount"])
+        user_id = row["user_id"]
+        amount = int(row["amount"])
         if user_id not in user_transaction_count:
-            user_transaction_count[user_id]=0
-        user_transaction_count[user_id]+=1
-        if amount>500000:
+            user_transaction_count[user_id] = 0
+        user_transaction_count[user_id] += 1
+        if amount > 500000:
             suspicious_transactions.append(row)
-            total_suspicious_amount+=amount
+            total_suspicious_amount += amount
             suspicious_users.add(user_id)
 for user, count in user_transaction_count.items():
     if count > 3:
