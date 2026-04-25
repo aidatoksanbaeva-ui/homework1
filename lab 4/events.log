@@ -1,0 +1,15 @@
+{'player': 'Alice', 'type': 'LOOT', 'value': 15, 'item': 'Bow', 'timestamp': '2026-04-10 21:31:58.838905'}
+{'player': 'Alice', 'type': 'HEAL', 'value': 41, 'item': None, 'timestamp': '2026-04-10 21:31:58.838933'}
+{'player': 'Alice', 'type': 'HEAL', 'value': 37, 'item': None, 'timestamp': '2026-04-10 21:31:58.838938'}
+{'player': 'Alice', 'type': 'ATTACK', 'value': 35, 'item': None, 'timestamp': '2026-04-10 21:31:58.838943'}
+{'player': 'Alice', 'type': 'LOOT', 'value': 40, 'item': 'Axe', 'timestamp': '2026-04-10 21:31:58.838945'}
+{'player': 'Bob', 'type': 'LOOT', 'value': 15, 'item': 'Bow', 'timestamp': '2026-04-10 21:31:58.838948'}
+{'player': 'Bob', 'type': 'LOOT', 'value': 15, 'item': 'Bow', 'timestamp': '2026-04-10 21:31:58.838950'}
+{'player': 'Bob', 'type': 'LOOT', 'value': 40, 'item': 'Axe', 'timestamp': '2026-04-10 21:31:58.838951'}
+{'player': 'Bob', 'type': 'LOOT', 'value': 15, 'item': 'Bow', 'timestamp': '2026-04-10 21:31:58.838952'}
+{'player': 'Bob', 'type': 'LOOT', 'value': 25, 'item': 'Sword', 'timestamp': '2026-04-10 21:31:58.838954'}
+{'player': 'Charlie', 'type': 'LOOT', 'value': 15, 'item': 'Bow', 'timestamp': '2026-04-10 21:31:58.838956'}
+{'player': 'Charlie', 'type': 'HEAL', 'value': 29, 'item': None, 'timestamp': '2026-04-10 21:31:58.838958'}
+{'player': 'Charlie', 'type': 'ATTACK', 'value': 50, 'item': None, 'timestamp': '2026-04-10 21:31:58.838960'}
+{'player': 'Charlie', 'type': 'ATTACK', 'value': 44, 'item': None, 'timestamp': '2026-04-10 21:31:58.838962'}
+{'player': 'Charlie', 'type': 'HEAL', 'value': 25, 'item': None, 'timestamp': '2026-04-10 21:31:58.838964'}

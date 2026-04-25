@@ -5,3 +5,5 @@ f = lambda nums: [
     and nums[i] % 2 != 0
     and nums[i] > sum(nums) / len(nums)
 ]
+nums = [1, 5, 7, 10, 3, 9, 12]
+print(f(nums))
