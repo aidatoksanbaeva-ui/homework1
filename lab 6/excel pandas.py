@@ -27,7 +27,7 @@ print(df[['total_value', 'double_stock', 'log_price']].head())
 
 #4
 electronics_expensive = df[(df['col_2'] > 500) & (df['col_7'] == 'Electronics')]
-
+print(electronics_expensive.head())
 
 #5
 result = df.groupby('col_7').agg(
