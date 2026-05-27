@@ -47,3 +47,4 @@ print("Аномалия саны:", len(anomalies))
 df_clean = df[(df["col_2"] <= upper_limit) & (df["col_2"] >= lower_limit)]
 print(df.shape)
 print(df_clean.shape)
+#6
